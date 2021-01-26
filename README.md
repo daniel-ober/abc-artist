@@ -102,4 +102,5 @@
 | Add Media query for responsive design when user switch from desktop to mobile view | M | 1 hrs| 0 hrs | 0 hrs |
 | Deploy LaLaLyrics to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
 | Testing | H | 2 hrs| 0 hrs | 0 hrs |
-| Total | H | 20 hrs| 0 hrs | 0 hrs |
+| Debugging | H | 2 hrs| 0 hrs | 0 hrs |
+| Total | H | 22 hrs| 0 hrs | 0 hrs |
