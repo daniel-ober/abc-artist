@@ -12,7 +12,7 @@
 
 ## API and Data Sample
 - API: [TheAudioDB](https://www.theaudiodb.com/api_guide.php)
-- Example: theaudiodb.com/api/v1/json/1/search.php?s=madonna
+- Example: https://www.theaudiodb.com/api/v1/json/1/search.php?s=madonna
 - Targeted Data: Artist Name, Biography, Genre, Image/Thumbnail
 - JSON Snippet:
 ```javascript
