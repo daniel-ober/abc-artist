@@ -2,7 +2,7 @@
 
 ## Project Name
 
-- LaLyric
+- LaLaLyric
 
 
 ## Project Description
