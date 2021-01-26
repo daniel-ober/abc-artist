@@ -7,12 +7,12 @@
 
 ## Project Description
 
-- A tool designed for music lovers to search for lyrics of their favorite artists and songs.
+- A tool designed for music lovers to search song lyrics of their favorite music artists.
 
 
 ## API and Data Sample
 - API: [Vagalume](https://api.vagalume.com.br/)
-- Example: (https://www.vagalume.com.br/coldplay/index.js)
+- Example: https://www.vagalume.com.br/coldplay/index.js
 - Targeted Data: Artist Image, Artist Name, Song Name, Song Lyrics
 - JSON Snippet:
 ```javascript
