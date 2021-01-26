@@ -2,36 +2,76 @@
 
 ## Project Name
 
-The name of your project.
+- LaLyric
+
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+- A tool designed for music lovers to search for lyrics of their favorite artists and songs.
+
 
 ## API and Data Sample
+- API: Vagalume (Example: https://www.vagalume.com.br/coldplay/index.js)
+- Targeted Data: Artist Image, Artist Name, Song Name, Song Lyrics
+- JSON Snippet:
+  {
+    "artist": {
+        "id": "3ade68b5gebc6eda3",
+        "desc": "Coldplay",
+        "url": "/coldplay/",
+        "pic_small": "/coldplay/images/profile.jpg",
+        "pic_medium": "/coldplay/images/coldplay.jpg",
+        "rank": {
+            "pos": "7",
+            "period": 202101,
+            "views": "102912",
+            "uniques": "63864",
+            "points": "84.7"
+        },
+    "toplyrics": {
+            "item": [
+                {
+                    "id": "3ade68b8ge8b16fa3",
+                    "desc": "Viva La Vida",
+                    "url": "/coldplay/viva-la-vida.html"
+                },
+                {
+                    "id": "3ade68b6g6296fda3",
+                    "desc": "The Scientist",
+                    "url": "/coldplay/the-scientist.html"
+                },
+                {
+                    "id": "3ade68b5g83a8eda3",
+                    "desc": "Yellow",
+                    "url": "/coldplay/yellow.html"
+              }
+          }
+      }
+  }
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+- Use Axios to access song, artist, photo data from Vagalume API
+- Append API data to the DOM
+- Listen for user input to decide what data to render on page
+- Render data on page
+- Reset DOM if another search is performed
+- Deploy LaLaLyrics to a hosting site
+- Style using a flexbox or grid
+- Add Media responsive design when user switch from desktop to mobile view
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Use local storage to save favorites
+- Implement a second API to direct user to searched song on Apple Music
+- Enhance CSS styling
+- Design customer LaLaLyric logo
 
 ## Project Schedule
 
@@ -50,7 +90,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
+
+
 
 ## Timeframes
 
@@ -63,16 +105,3 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
-
-## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
