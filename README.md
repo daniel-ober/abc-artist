@@ -89,8 +89,7 @@
 
 ## Priority Matrix
 
-!(https://app.conceptboard.com/board/xbgh-h6k7-nyrh-x7qb-kt01)
-
+![Priority Matrix](https://app.conceptboard.com/board/xbgh-h6k7-nyrh-x7qb-kt01)
 
 
 ## Timeframes
