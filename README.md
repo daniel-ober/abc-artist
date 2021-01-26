@@ -78,7 +78,7 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | In Progress
 |Jan 26| Project Approval | Incomplete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Jan 28| Initial Clickable Model  | Incomplete
