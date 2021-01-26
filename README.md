@@ -79,7 +79,7 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | In Progress
-|Jan 26| Project Approval, API Data test in JS, Pseudocoding | Incomplete
+|Jan 26| Project Approval, test API data in Chrome Dev, Pseudocoding | Incomplete
 |Jan 27| Pseudocoding, Core HTML Structure, Basic CSS Styling | Incomplete
 |Jan 28| MVP  | Incomplete
 |Jan 29| Styling | Incomplete
