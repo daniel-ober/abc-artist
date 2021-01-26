@@ -14,7 +14,7 @@
 - API: Vagalume (Example: https://www.vagalume.com.br/coldplay/index.js)
 - Targeted Data: Artist Image, Artist Name, Song Name, Song Lyrics
 - JSON Snippet:
-
+```javascript
   {
     "artist": {
         "id": "3ade68b5gebc6eda3",
@@ -49,7 +49,7 @@
           }
       }
   }
-
+```
 
 ## Wireframes
 
@@ -89,7 +89,7 @@
 
 ## Priority Matrix
 
-![Priority Matrix](https://app.conceptboard.com/board/xbgh-h6k7-nyrh-x7qb-kt01)
+https://app.conceptboard.com/board/xbgh-h6k7-nyrh-x7qb-kt01
 
 
 ## Timeframes
