@@ -86,7 +86,7 @@
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
-![alt text](https://github.com/daniel-ober/music_tablature/blob/main/Action%20Priority%20Matrix.png)
+![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
 
 
 ## Timeframes
