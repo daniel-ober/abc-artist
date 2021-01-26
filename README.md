@@ -14,6 +14,7 @@
 - API: Vagalume (Example: https://www.vagalume.com.br/coldplay/index.js)
 - Targeted Data: Artist Image, Artist Name, Song Name, Song Lyrics
 - JSON Snippet:
+
   {
     "artist": {
         "id": "3ade68b5gebc6eda3",
