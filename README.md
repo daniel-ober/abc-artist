@@ -53,7 +53,7 @@
 ```
 
 ## Wireframes
-![alt text](https://github.com/daniel-ober/music_tablature/blob/main/wireframes.png)
+![alt text](https://github.com/daniel-ober/lalalyric/blob/main/wireframe.png)
 
 
 #### MVP 
