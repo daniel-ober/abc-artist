@@ -53,11 +53,12 @@
 
 ## Wireframes
 
-
+(image)
 
 
 
 #### MVP 
+
 - Use Axios to access song, artist, photo data from Vagalume API
 - Append API data to the DOM
 - Listen for user input to decide what data to render on page
@@ -69,16 +70,13 @@
 
 
 #### PostMVP  
+
 - Use local storage to save favorites
 - Implement a second API to direct user to searched song on Apple Music
 - Enhance CSS styling
 - Design customer LaLaLyric logo
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -91,18 +89,20 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-
+(image)
 
 
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Use Axios to access song, artist, photo data from Vagalume API, and append to DOM | H | 5 hrs| 0 hrs | 0 hrs |
+| Listen for user input to decide what data to render on page | H | 4 hrs| 0 hrs | 0 hrs |
+| Reset DOM if another search is performed | H | 3 hrs| 0 hrs | 0 hrs |
+| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 0 hrs | 0 hrs |
+| Style using a flexbox or grid | M | 1.5 hrs| 0 hrs | 0 hrs |
+| Add Media query for responsive design when user switch from desktop to mobile view | M | 1 hrs| 0 hrs | 0 hrs |
+| Deploy LaLaLyrics to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
+| Testing | H | 1 hrs| 0 hrs | 0 hrs |
+| Total | H | 18.5 hrs| 0 hrs | 0 hrs |
