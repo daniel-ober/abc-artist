@@ -52,9 +52,7 @@
 ```
 
 ## Wireframes
-
-(image)
-
+![alt text](https://github.com/daniel-ober/music_tablature/blob/main/wireframes.png)
 
 
 #### MVP 
@@ -88,8 +86,7 @@
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
-
-(image)
+![alt text](https://github.com/daniel-ober/music_tablature/blob/main/Action%20Priority%20Matrix.png)
 
 
 ## Timeframes
@@ -103,5 +100,5 @@
 | Style using a flexbox or grid | M | 1.5 hrs| 0 hrs | 0 hrs |
 | Add Media query for responsive design when user switch from desktop to mobile view | M | 1 hrs| 0 hrs | 0 hrs |
 | Deploy LaLaLyrics to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
-| Testing | H | 1 hrs| 0 hrs | 0 hrs |
-| Total | H | 18.5 hrs| 0 hrs | 0 hrs |
+| Testing | H | 1.5 hrs| 0 hrs | 0 hrs |
+| Total | H | 19 hrs| 0 hrs | 0 hrs |
