@@ -98,13 +98,13 @@
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Use Axios to access song, artist, photo data from Vagalume API, and append to DOM | H | 5 hrs| 0 hrs | 0 hrs |
+| Use Axios to access music artist name, genre, photo, and biography from TheAudioDB API, and append to DOM | H | 5 hrs| 0 hrs | 0 hrs |
 | Listen for user input to decide what data to render on page | H | 4 hrs| 0 hrs | 0 hrs |
 | Reset DOM if another search is performed | H | 3 hrs| 0 hrs | 0 hrs |
 | Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 0 hrs | 0 hrs |
-| Style using a flexbox or grid | M | 2 hrs| 0 hrs | 0 hrs |
+| Style using a flexbox | M | 2 hrs| 0 hrs | 0 hrs |
 | Add Media query for responsive design when user switch from desktop to mobile view | M | 1 hrs| 0 hrs | 0 hrs |
-| Deploy LaLaLyrics to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
+| Deploy app to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
 | Testing | H | 2 hrs| 0 hrs | 0 hrs |
 | Debugging | H | 2 hrs| 0 hrs | 0 hrs |
 | Total | H | 22 hrs| 0 hrs | 0 hrs |
