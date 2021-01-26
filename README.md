@@ -79,10 +79,10 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | In Progress
-|Jan 26| Project Approval | Incomplete
-|Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Initial Clickable Model  | Incomplete
-|Jan 29| MVP | Incomplete
+|Jan 26| Project Approval, API Data test in JS, Pseudocoding | Incomplete
+|Jan 27| Pseudocoding, Core HTML Structure, Basic CSS Styling | Incomplete
+|Jan 28| MVP  | Incomplete
+|Jan 29| Styling | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
