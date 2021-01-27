@@ -82,12 +82,14 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | In Progress
-|Jan 26| Project Approval, test API data in Chrome Dev, Pseudocoding | Incomplete
-|Jan 27| Pseudocoding, Core HTML Structure, Base CSS Styling | Incomplete
-|Jan 28| MVP  | Incomplete
-|Jan 29| Styling | Incomplete
+|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Jan 26| Project Approval, test API data in Chrome Dev, Pseudocoding | Complete
+|Jan 27| Pseudocoding, Core HTML Structure, Base CSS Styling | In Progress
+|Jan 28| MVP  | In Progress
+|Jan 29| Styling | In Progress
 |Feb 1| Presentations/Project Submission | Incomplete
+
+Project Schedule data last updated 1/27 @ 12:05PM EST
 
 ## Priority Matrix
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
@@ -97,15 +99,17 @@
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Use Axios to fetch artist data | H | 3 hrs| 0 hrs | 0 hrs |
-| Search by user input | H | 3 hrs| 0 hrs | 0 hrs |
-| CSS Layout | H | 3 hrs| 0 hrs | 0 hrs |
+| Use Axios to fetch artist data | H | 3 hrs| 2 hrs | 0 hrs |
+| Search by user input | H | 3 hrs| 1 hrs | 0 hrs |
 | Form event listener | H | 3 hrs| 0 hrs | 0 hrs |
+| CSS Layout | H | 3 hrs| 0.25 hrs | 0 hrs |
 | Reset DOM if another search is performed | H | 3 hrs| 0 hrs | 0 hrs |
-| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 0 hrs | 0 hrs |
+| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 0.5 hrs | 0 hrs |
 | Set flexbox containers/items | M | 2 hrs| 0 hrs | 0 hrs |
 | Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 0 hrs | 0 hrs |
 | Deploy app to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
-| Testing | H | 2 hrs| 0 hrs | 0 hrs |
+| Testing | H | 2 hrs| 0.25 hrs | 0 hrs |
 | Debugging | H | 2 hrs| 0 hrs | 0 hrs |
-| Total | H | 26 hrs| 0 hrs | 0 hrs |
+| Total | H | 26 hrs| 4 hrs | 0 hrs |
+
+Timeframes data last updated 1/27 @ 12:05PM EST
