@@ -54,6 +54,7 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 }
 
 
+
 /*  displays the previous data on the browser. Tip: declare a variable within the fuctions that pulls from each of the data areas needed (ie. `<img src='${artistDataSet.thumbnail}> <h1>${artistName.artist}</h1> and <h2>${artistName.genre}</h2>) */ 
  
 
