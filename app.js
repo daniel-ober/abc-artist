@@ -12,8 +12,9 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     try {  /*  setup try for the data retrieval */
     let response = await axios.get(`${url}${uniqueArtist}`) /* declare variable that will call on the data from our API url above */ /* added 'uniqueArtist' as the url endpoint once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
     // console.log(response) 
-    let artistDataSet = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
-    console.log(artistDataSet)
+    let artistElements = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
+    // console.log(artistElements)
+    artistData(artistElements)
     } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
         console.log(error)
     }
@@ -36,39 +37,26 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 
 
 
-// COMPONENT 4: DISPLAY OUR SEARCH IN THE BROWSER FOR THE USER
+// COMPONENT 4: TARGET DATA FROM OUR 'artistElements' TO DISPLAY IN THE BROWSER FOR USER
 
-/*  create a function called that pulls data from our artistDataSet variable and then displays that data onto the browser. Target the following endpoints: strArtist (artist name), strGenre (genre), strArtistThumb (thumbnail photo), strArtistLogo (logo), strBiographyEN (bio), strWebsite (website), strFacebook (facebook), strTwitter (twitter) */
- function artistDetails(artistDataSet) {
+ function artistData(artistElements) { /*  create a function that targets specific items in the artist data. Target the following endpoints: strArtist (artist name), strGenre (genre), strArtistThumb (thumbnail photo), strArtistLogo (logo), strBiographyEN (bio), strWebsite (website), strFacebook (facebook), strTwitter (twitter) */
      let artistInfo = 
     `
-    <h1>${artistInfo.strArtist}</h1>
-    <h2>${artistInfo.strGenre}</h2>
-    <img src='${artistInfo.strArtistThumb}'></img src>
-    <img src='${artistInfo.strArtistLogo}'></img src>
-    <h1>${artistInfo.strBiographyEN}</h1>
-    <a href='${artistInfo.strWebsite}'></a href>
-    <a href='${artistInfo.strFacebook}'></a href>
-    <a href='${artistInfo.strTwitter}'></a href>
+    <h1>${artistElements.strArtist}</h1>
+    <h2>${artistElements.strGenre}</h2>
+    <img src='${artistElements.strArtistThumb}'></img src>
+    <img src='${artistElements.strArtistLogo}'></img src>
+    <h1>${artistElements.strBiographyEN}</h1>
+    <a href='${artistElements.strWebsite}'></a href>
+    <a href='${artistElements.strFacebook}'></a href>
+    <a href='${artistElements.strTwitter}'></a href>
     `
+/* return artistInfo to '.artist-section' class of the body */
+const artistContainer = document.querySelector('.artist-section')
+    artistContainer.insertAdjacentHTML('beforeend', artistInfo)
+    return artistInfo /*  stops execution of function and returns */
 }
+/* call our artistData function somewhere in COMPONENT 2 */ 
 
 
-
-/*  displays the previous data on the browser. Tip: declare a variable within the fuctions that pulls from each of the data areas needed (ie. `<img src='${artistDataSet.thumbnail}> <h1>${artistName.artist}</h1> and <h2>${artistName.genre}</h2>) */ 
- 
-
-
-/*  return artistInfo to '.artist-section' */    
-
-
-
-/*  create a function called artistInfo that pulls artist biography from the data from our try...let
-
-
-
-/*  displays the previous data on the browser. Tip: declare a variable within the fuctions that pulls from each of the data areas needed (ie. `<img srcs='${artistDataSet.thumbnail}> <h1>${artistName.artist}</h1> and <h2>${artistName.genre}</h2>) */ /*  return artistInfo to 'bio-section' */
-
-
-
-/*  reset DOM  */
+// COMPONENT 5: RESET THE DOM WITH EACH NEW SEARCH
