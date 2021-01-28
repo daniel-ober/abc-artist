@@ -12,14 +12,14 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     try {  /*  setup try for the data retrieval */
     let response = await axios.get(`${url}${uniqueArtist}`) /* declare variable that will call on the data from our API url above */ /* added 'uniqueArtist' as the url endpoint once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
     // console.log(response) 
-    let artistElements = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
-    // console.log(artistElements)
-    artistData(artistElements)
+    let data = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
+    // console.log(data)
+    removeArtist() /* DOM is reset */
+    artistData(data) /* artist data appended to DOM */
     } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
         console.log(error)
     }
 }
-
 
 // COMPONENT 3: SETUP FUNCTIONALITY FOR UNIQUE SEARCH FROM THE BROWSER
 
@@ -35,28 +35,34 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 })
 // getData() /* un-commented getData()  once I was able to get the unique artist data in Chrome dev tool. */
 
+// COMPONENT 4: APPEND ARTIST DATA TO DOM
 
-
-// COMPONENT 4: TARGET DATA FROM OUR 'artistElements' TO DISPLAY IN THE BROWSER FOR USER
-
- function artistData(artistElements) { /*  create a function that targets specific items in the artist data. Target the following endpoints: strArtist (artist name), strGenre (genre), strArtistThumb (thumbnail photo), strArtistLogo (logo), strBiographyEN (bio), strWebsite (website), strFacebook (facebook), strTwitter (twitter) */
+ function artistData(data) { /*  create a function that grabs artists' main details and appends to main-container. */
      let artistInfo = 
     `
-    <h1>${artistElements.strArtist}</h1>
-    <h2>${artistElements.strGenre}</h2>
-    <img src='${artistElements.strArtistThumb}'></img src>
-    <img src='${artistElements.strArtistLogo}'></img src>
-    <h1>${artistElements.strBiographyEN}</h1>
-    <a href='${artistElements.strWebsite}'></a href>
-    <a href='${artistElements.strFacebook}'></a href>
-    <a href='${artistElements.strTwitter}'></a href>
+    <h1 class='artist-name'>${data.strArtist}</h1>
+    <h2 class='artist-genre'>${data.strGenre}</h2>
+    <img id='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
+    <img id='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
+    <a href='https://${data.strWebsite}' target='_blank'>Website</a>
+    <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
+    <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
+    <p class='artist-bio'>${data.strBiographyEN}</p>
     `
-/* return artistInfo to '.artist-section' class of the body */
-const artistContainer = document.querySelector('.artist-section')
+/* return artistInfo to the body's '.main-container' */
+const artistContainer = document.querySelector('.main-container')
     artistContainer.insertAdjacentHTML('beforeend', artistInfo)
     return artistInfo /*  stops execution of function and returns */
 }
-/* call our artistData function somewhere in COMPONENT 2 */ 
+
+/* call our artistData function in COMPONENT 2 */ 
 
 
-// COMPONENT 5: RESET THE DOM WITH EACH NEW SEARCH
+// // COMPONENT 5: RESET DOM / REMOVE LAST
+function removeArtist() {
+    const artistInfo = document.querySelector('.main-container')
+    while (artistInfo.lastChild) {
+        artistInfo.removeChild(artistInfo.lastChild)
+    }
+}
+/* call our removeArtist function in COMPONENT 2, before artistData(data) */

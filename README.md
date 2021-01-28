@@ -89,8 +89,6 @@
 |Jan 29| Styling | In Progress
 |Feb 1| Presentations/Project Submission | Incomplete
 
-Project Schedule data last updated 1/27 @ 12:05PM EST
-
 ## Priority Matrix
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
 
@@ -103,13 +101,11 @@ Project Schedule data last updated 1/27 @ 12:05PM EST
 | Search by user input | H | 3 hrs| 3 hrs | 0 hrs |
 | Form event listener | H | 3 hrs| 2 hrs | 0 hrs |
 | CSS Layout | H | 3 hrs| 0.25 hrs | 0 hrs |
-| Reset DOM if another search is performed | H | 3 hrs| 0 hrs | 0 hrs |
-| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 0.5 hrs | 0 hrs |
+| Reset DOM if another search is performed | H | 3 hrs| 3 hrs | 0 hrs |
+| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 1.5 hrs | 0 hrs |
 | Set flexbox containers/items | M | 2 hrs| 0 hrs | 0 hrs |
 | Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 0 hrs | 0 hrs |
 | Deploy app to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
-| Testing | H | 2 hrs| 0.5 hrs | 0 hrs |
-| Debugging | H | 2 hrs| .5 hrs | 0 hrs |
-| Total | H | 26 hrs| 8.75 hrs | 0 hrs |
-
-Timeframes data last updated 1/27 @ 12:05PM EST
+| Testing | H | 2 hrs| 0.75 hrs | 0 hrs |
+| Debugging | H | 2 hrs| 0.5 hrs | 0 hrs |
+| Total | H | 26 hrs| 13 hrs | 0 hrs |
