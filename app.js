@@ -5,6 +5,7 @@ const api = `/api/v1/json/1/search.php?s=`
 const url = `${domain}${api}`
 
 
+
 // COMPONENT 2: ACCESS API DATA
 
 async function getData(uniqueArtist) {  /*  create an async function that points to music artist data */  /* set my function parameter to 'uniqueArtist' once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
@@ -54,6 +55,7 @@ const artistContainer = document.querySelector('.main-container') /* return arti
     artistContainer.insertAdjacentHTML('beforeend', artistInfo)
     return artistInfo /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
 }
+
 
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
