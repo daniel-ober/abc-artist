@@ -14,8 +14,15 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     // console.log(response) 
     let data = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
     // console.log(data)
-    removeArtist() /* DOM is reset */
-    artistData(data) /* artist data appended to DOM */
+    removeArt()
+    removeThumbnail()
+    removeDetails()
+    removeBio()
+    artistBgArt(data)
+    artistThumbnail(data)
+    artistDetails(data)
+    artistBio(data)
+    /* artist data appended to DOM */
     } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
         console.log(error)
     }
@@ -37,31 +44,73 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 
 
 // COMPONENT 4: APPEND ARTIST DATA TO DOM
+function artistBgArt(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+    let mainArt = 
+    `
+    <img id='fan-art' src='${data.strArtistFanart}'></img>
+    `
+    const mainContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
+    mainContainer.insertAdjacentHTML('beforeend', mainArt)
+    return mainArt /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+}
 
- function artistData(data) { /*  create a function that grabs artists' main details and appends to main-container. */
-     let artistInfo = 
+function artistThumbnail(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+    let artThumbnail = 
     `
     <img id='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
+    `
+    const thumbnailContainer = document.querySelector('.artist-thumbnail') /* return mainInfo to the body's '.main-container' */
+    thumbnailContainer.insertAdjacentHTML('beforeend', artThumbnail)
+    return artThumbnail /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+}
+
+ function artistDetails(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+    let mainInfo = 
+    `
     <img id='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
     <h1 class='artist-name'>${data.strArtist}</h1>
     <h2 class='artist-genre'>${data.strGenre}</h2>
     <a href='https://${data.strWebsite}' target='_blank'>Website</a>
     <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
     <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
-    <p class='artist-bio'>${data.strBiographyEN}</p>
     `
-
-const artistContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
-    artistContainer.insertAdjacentHTML('beforeend', artistInfo)
-    return artistInfo /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+    const infoContainer = document.querySelector('#group-container') /* return mainInfo to the body's '.main-container' */
+    infoContainer.insertAdjacentHTML('beforeend', mainInfo)
+    return mainInfo /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
 }
 
-
+function artistBio(data) {
+    let bioInfo =
+    `
+    <p class='artist-bio'>${data.strBiographyEN}</p>
+    `
+    const bioContainer = document.querySelector('.bio-container')
+    bioContainer.insertAdjacentHTML('beforeend', bioInfo)
+    return bioInfo 
+}
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
-function removeArtist() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
-    const artistInfo = document.querySelector('.main-container')
-    while (artistInfo.lastChild) {
-        artistInfo.removeChild(artistInfo.lastChild)
+function removeArt() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+    const rmArt = document.querySelectorAll('.main-container')
+    while (rmArt.lastChild) {
+        rmArt.removeChild(rmArt.lastChild)
+    }
+}
+function removeThumbnail() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+    const rmThumbnail = document.querySelectorAll('.artist-thumbnail')
+    while (rmThumbnail.lastChild) {
+        rmThumbnail.removeChild(rmThumbnail.lastChild)
+    }
+}
+function removeDetails() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+    const rmDetails = document.querySelectorAll('#group-container')
+    while (rmDetails.lastChild) {
+        rmDetails.removeChild(rmDetails.lastChild)
+    }
+}
+function removeBio() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+    const rmBio = document.querySelectorAll('.bio-container')
+    while (rmBio.lastChild) {
+        rmBio.removeChild(rmBio.lastChild)
     }
 }
