@@ -1,4 +1,86 @@
 body {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
+
+header {
+    padding: 15px;
+    display: flex;
+    background-color: rgb(140, 153, 187);
+}
+
+#blank {
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(231, 237, 231);
+}
+
+#search {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(206, 211, 206);
+}
+
+.main-container {
+    flex-direction: column;
+    background-color: rgb(205, 241, 255);
+}
+
+#artist-thumbnail {
+    height: 30vh;
+    width: 30vh;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 3vh;
+}
+
+#artist-logo {
+    height: 20%;
+    width: 20%;
+    border-color: rgb(230, 157, 244);
+}
+
+.artist-bio {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(188, 191, 197);
+    margin: 5vh;
+}
+
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornflowerblue;
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkcyan;
+}
+
+@media only screen /* iPhone 12 Pro Max; 2778x1284 pixels at 458ppi */ */
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+
+@media only screen /* iPhone 12 and 12 Pro; 2532x1170 pixels at 460ppi */
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+
+
+}
+
+
+@media screen /* Galaxy S6 */
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}

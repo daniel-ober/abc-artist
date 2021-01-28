@@ -1,5 +1,5 @@
 // COMPONENT 1: DECLARE VARIABLES FOR API URL INFO
-
+// https://www.theaudiodb.com/api/v1/json/1/search.php?s=
 const domain = 'https://www.theaudiodb.com'
 const api = `/api/v1/json/1/search.php?s=`
 const url = `${domain}${api}`
@@ -35,34 +35,33 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 })
 // getData() /* un-commented getData()  once I was able to get the unique artist data in Chrome dev tool. */
 
+
 // COMPONENT 4: APPEND ARTIST DATA TO DOM
 
  function artistData(data) { /*  create a function that grabs artists' main details and appends to main-container. */
      let artistInfo = 
     `
-    <h1 class='artist-name'>${data.strArtist}</h1>
-    <h2 class='artist-genre'>${data.strGenre}</h2>
     <img id='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
     <img id='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
+    <h1 class='artist-name'>${data.strArtist}</h1>
+    <h2 class='artist-genre'>${data.strGenre}</h2>
     <a href='https://${data.strWebsite}' target='_blank'>Website</a>
     <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
     <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
     <p class='artist-bio'>${data.strBiographyEN}</p>
     `
-/* return artistInfo to the body's '.main-container' */
-const artistContainer = document.querySelector('.main-container')
+
+const artistContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
     artistContainer.insertAdjacentHTML('beforeend', artistInfo)
-    return artistInfo /*  stops execution of function and returns */
+    return artistInfo /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
 }
 
-/* call our artistData function in COMPONENT 2 */ 
 
 
-// // COMPONENT 5: RESET DOM / REMOVE LAST
-function removeArtist() {
+// COMPONENT 5: RESET DOM / REMOVE LAST
+function removeArtist() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
     const artistInfo = document.querySelector('.main-container')
     while (artistInfo.lastChild) {
         artistInfo.removeChild(artistInfo.lastChild)
     }
 }
-/* call our removeArtist function in COMPONENT 2, before artistData(data) */
