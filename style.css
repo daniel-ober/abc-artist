@@ -39,15 +39,15 @@ header {
 }
 
 #artist-logo {
-    height: 20%;
-    width: 20%;
+    height: 35%;
+    width: 35%;
     border-color: rgb(230, 157, 244);
 }
 
 .artist-bio {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(188, 191, 197);
-    margin: 5vh;
+    margin: 3vh;
 }
 
 h1 {
@@ -84,3 +84,4 @@ h2 {
   and (-webkit-device-pixel-ratio: 4) {
 
 }
+
