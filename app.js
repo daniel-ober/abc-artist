@@ -7,7 +7,6 @@ const url = `${domain}${api}`
 
 
 // COMPONENT 2: ACCESS API DATA
-
 async function getData(uniqueArtist) {  /*  create an async function that points to music artist data */  /* set my function parameter to 'uniqueArtist' once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
     try {  /*  setup try for the data retrieval */
     let response = await axios.get(`${url}${uniqueArtist}`) /* declare variable that will call on the data from our API url above */ /* added 'uniqueArtist' as the url endpoint once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
@@ -28,8 +27,8 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     }
 }
 
-// COMPONENT 3: SETUP FUNCTIONALITY FOR UNIQUE SEARCH FROM THE BROWSER
 
+// COMPONENT 3: SETUP FUNCTIONALITY FOR UNIQUE SEARCH FROM THE BROWSER
 const searchButton = document.querySelector('#search') /*  declare a var that pulls our search button via querySelector  */
 // console.log(searchButton) /* tested via console and got successful response: <button id="search">Search</button> */
 
@@ -44,17 +43,17 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 
 
 // COMPONENT 4: APPEND ARTIST DATA TO DOM
-function artistBgArt(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+function artistBgArt(data) { /*  add artist bg image to .main-container */
     let mainArt = 
     `
     <img id='fan-art' src='${data.strArtistFanart}'></img>
     `
     const mainContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
     mainContainer.insertAdjacentHTML('beforeend', mainArt)
-    return mainArt /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+    return mainArt
 }
 
-function artistThumbnail(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+function artistThumbnail(data) { /*  add artist thumbnail to .artist-container */
     let artThumbnail = 
     `
     <img id='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
@@ -64,7 +63,7 @@ function artistThumbnail(data) { /*  create a function that grabs artists' main 
     return artThumbnail  
 }
 
- function artistDetails(data) { /*  create a function that grabs artists' main details and appends to group-container. */
+ function artistDetails(data) { /*  add artist details to #details */
     let mainInfo = 
     `
     <img id='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
@@ -79,7 +78,7 @@ function artistThumbnail(data) { /*  create a function that grabs artists' main 
     return mainInfo
 }
 
-function artistBio(data) {
+function artistBio(data) { /*  add artist bio to .bio-container */
     let bioInfo =
     `
     <p class='artist-bio'>${data.strBiographyEN}</p>
