@@ -1,10 +1,57 @@
-nav {
-    background-color: rgba(185, 234, 243, 0.301);
-    display: flex;
-    justify-content: center;
-    padding: 15px;
+
+body {
+    width: 1920px;
+    height: 1080px;
 }
 
+nav {
+    background-color: rgba(5, 99, 116, 0.913);
+    display: flex;
+    justify-content: center;
+}
+
+#blank {
+    width: 400px;
+    margin: 10px;
+    background-color: rgb(231, 237, 231);
+}
+
+#search {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(206, 211, 206);
+}
+
+#background-art {
+    opacity: 50%;
+    background-size: auto;
+    width: 1920px;
+    height: 1080px;
+    border: 20px;
+}
+
+#artist-thumbnail {
+    height: 20vh;
+    width: 20vh;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    align-content: center;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio-container {
+    background-color: cornsilk;
+}
+
+
+
+/* 
 #blank {
     width: 300px;
     margin: 10px;
@@ -42,7 +89,7 @@ nav {
 
 .artist-container {
     justify-content: center;
-}
+} */
 
 
 

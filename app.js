@@ -40,14 +40,14 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 function searchMain(data) { /*  add artist bg image to .main-container */
     let artistMain = 
     `
-    <img src='${data.strArtistFanart}' id='fan-art'></img>
+    <img src='${data.strArtistFanart}' id='background-art'></img>
     <div class='artist-container'>
         <img src='${data.strArtistThumb}' alt='${data.strArtist}' id='artist-thumbnail'></img>
-        <div class='artist-details'>
-            <img src='${data.strArtistLogo}' alt='logo' id='artist-logo'></img>
-            <a class='social-media' href='https://${data.strWebsite}' target='_blank'>Website</a>
-            <a class='social-media' href='https://${data.strFacebook}' target='_blank'>Facebook</a>
-            <a class='social-media' href='https://${data.strTwitter}' target='_blank'>Twitter</a>
+        <img src='${data.strArtistLogo}' alt='artist-logo' id='artist-logo'></img>
+        <div class='social-media'>
+            <a href='https://${data.strWebsite}' target='_blank'>Website</a>
+            <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
+            <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
         </div>
     </div>
     `
