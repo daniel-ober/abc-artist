@@ -46,7 +46,7 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 function artistBgImg(data) { /*  add artist bg image to .main-container */
     let mainArt = 
     `
-    <img src='${data.strArtistFanart}'></img>
+    <img class='background-image' src='${data.strArtistFanart}'></img>
     `
     const mainContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
     mainContainer.insertAdjacentHTML('beforeend', mainArt)
@@ -57,8 +57,8 @@ function artistDetails(data) { /*  add artist details to .details */
     let mainInfo = 
     `
     <img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
-    <div class='artist-name'>${data.strArtist}</div>
-    <div class='artist-genre'>${data.strGenre}</div>
+    <h1 class='artist-name'>${data.strArtist}</h1>
+    <h2 class='artist-genre'>${data.strGenre}</h2>
     <a href='https://${data.strWebsite}' target='_blank'>Website</a>
     <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
     <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
@@ -71,11 +71,11 @@ function artistDetails(data) { /*  add artist details to .details */
 function artistThumbnail(data) { /*  add artist thumbnail to .artist-container */
     let artThumbnail = 
     `
-    <img src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
+    <img class='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
     `
     const thumbnailContainer = document.querySelector('.details-container') 
     thumbnailContainer.insertAdjacentHTML('beforeend', artThumbnail)
-    return artThumbnail  
+    return artThumbnail
 }
 
 function artistBio(data) { /*  add artist bio to .bio-container */
