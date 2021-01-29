@@ -20,9 +20,10 @@ nav {
     background-color: rgb(206, 211, 206);
 }
 
-/* .main-container {
-
-} */
+.artist-logo {
+    display: flex;
+    flex-direction: row;
+}
 
 .background-image {
     max-width: 100%;
@@ -39,21 +40,11 @@ nav {
     align-content: center;
 }
 
-.details-container {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    margin: 0 auto;
-    align-content: center;
+.artist-container {
+    justify-content: center;
 }
 
-/* .bio-container {
 
-}
-
-h1 {
-    font-size: xx-large;
-} */
 
 @media only screen 
   and (min-device-width: 375px) 
