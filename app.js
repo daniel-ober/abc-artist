@@ -13,14 +13,14 @@ async function getData(uniqueArtist) {  /*  create an async function that points
         // console.log(response) 
     let data = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
         // console.log(data)
-    // removeThumbnail()
-    // removeBgImg()
-    // removeDetails()
-    // removeBio()
-    artistThumbnail(data)
-    artistBgImg(data)
-    artistDetails(data)
+    removeBio()
     artistBio(data)
+    removeBgImg()
+    artistBgImg(data)
+    removeThumbnail()
+    artistThumbnail(data)
+    removeDetails()
+    artistDetails(data)
     /* artist data appended to DOM */
     } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
         console.log(error)
@@ -95,21 +95,21 @@ function removeBgImg() {
         rmArt.removeChild(rmArt.lastChild)
     }
 }
-// function removeThumbnail() { 
-//     const rmThumbnail = document.querySelector('.artist-container')
-//     while (rmThumbnail.lastChild) {
-//         rmThumbnail.removeChild(rmThumbnail.lastChild)
-//     }
-// }
-// function removeDetails() { 
-//     const rmDetails = document.querySelector('.details')
-//     while (rmDetails.lastChild) {
-//         rmDetails.removeChild(rmDetails.lastChild)
-//     }
-// }
-// function removeBio() { 
-//     const rmBio = document.querySelector('.bio-container')
-//     while (rmBio.lastChild) {
-//         rmBio.removeChild(rmBio.lastChild)
-//     }
-// }
+function removeThumbnail() { 
+    const rmThumbnail = document.querySelector('.artist-container')
+    while (rmThumbnail.lastChild) {
+        rmThumbnail.removeChild(rmThumbnail.lastChild)
+    }
+}
+function removeDetails() { 
+    const rmDetails = document.querySelector('.details')
+    while (rmDetails.lastChild) {
+        rmDetails.removeChild(rmDetails.lastChild)
+    }
+}
+function removeBio() { 
+    const rmBio = document.querySelector('.bio-container')
+    while (rmBio.lastChild) {
+        rmBio.removeChild(rmBio.lastChild)
+    }
+}
