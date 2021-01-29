@@ -2,7 +2,7 @@
 
 ## Project Name
 
-- TBD
+- ABC Artist
 
 
 ## Project Description

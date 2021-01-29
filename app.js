@@ -14,7 +14,7 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     // console.log(response) 
     let data = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
     // console.log(data)
-    removeArt()
+    removeBgImg()
     removeThumbnail()
     removeDetails()
     removeBio()
@@ -59,12 +59,12 @@ function artistThumbnail(data) { /*  create a function that grabs artists' main 
     `
     <img id='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
     `
-    const thumbnailContainer = document.querySelector('.artist-thumbnail') /* return mainInfo to the body's '.main-container' */
+    const thumbnailContainer = document.querySelector('.artist-container') 
     thumbnailContainer.insertAdjacentHTML('beforeend', artThumbnail)
-    return artThumbnail /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+    return artThumbnail  
 }
 
- function artistDetails(data) { /*  create a function that grabs artists' main details and appends to main-container. */
+ function artistDetails(data) { /*  create a function that grabs artists' main details and appends to group-container. */
     let mainInfo = 
     `
     <img id='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
@@ -74,9 +74,9 @@ function artistThumbnail(data) { /*  create a function that grabs artists' main 
     <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
     <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
     `
-    const infoContainer = document.querySelector('#group-container') /* return mainInfo to the body's '.main-container' */
+    const infoContainer = document.querySelector('#details')
     infoContainer.insertAdjacentHTML('beforeend', mainInfo)
-    return mainInfo /*  stops execution of function and returns. we thencall our artistData function in COMPONENT 2 */ 
+    return mainInfo
 }
 
 function artistBio(data) {
@@ -90,25 +90,25 @@ function artistBio(data) {
 }
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
-function removeArt() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+function removeBgImg() {  
     const rmArt = document.querySelectorAll('.main-container')
     while (rmArt.lastChild) {
         rmArt.removeChild(rmArt.lastChild)
     }
 }
-function removeThumbnail() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
-    const rmThumbnail = document.querySelectorAll('.artist-thumbnail')
+function removeThumbnail() { 
+    const rmThumbnail = document.querySelectorAll('.artist-container')
     while (rmThumbnail.lastChild) {
         rmThumbnail.removeChild(rmThumbnail.lastChild)
     }
 }
-function removeDetails() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
-    const rmDetails = document.querySelectorAll('#group-container')
+function removeDetails() { 
+    const rmDetails = document.querySelectorAll('#details')
     while (rmDetails.lastChild) {
         rmDetails.removeChild(rmDetails.lastChild)
     }
 }
-function removeBio() {  /* we then call our removeArtist function in COMPONENT 2, before artistData(data) */
+function removeBio() { 
     const rmBio = document.querySelectorAll('.bio-container')
     while (rmBio.lastChild) {
         rmBio.removeChild(rmBio.lastChild)
