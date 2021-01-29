@@ -14,14 +14,14 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     let data = response.data.artists[0] /* declare variable that points to the specific data set that contains information for music artists */
         // console.log(data)
     removeBio()
-    artistBio(data)
-    removeBgImg()
-    artistBgImg(data)
-    removeThumbnail()
-    artistThumbnail(data)
-    removeDetails()
     artistDetails(data)
-    /* artist data appended to DOM */
+    artistBio(data)
+    removeThumbnail()
+    removeBgImg()
+    removeDetails()
+    artistBgImg(data)
+    artistThumbnail(data)
+    artistDetails(data)
     } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
         console.log(error)
     }
@@ -46,24 +46,14 @@ const artistValue = document.querySelector('#blank').value /*  declare a variabl
 function artistBgImg(data) { /*  add artist bg image to .main-container */
     let mainArt = 
     `
-    <img class='fan-art' src='${data.strArtistFanart}'></img>
+    <img src='${data.strArtistFanart}'></img>
     `
     const mainContainer = document.querySelector('.main-container') /* return artistInfo to the body's '.main-container' */
     mainContainer.insertAdjacentHTML('beforeend', mainArt)
     return mainArt
 }
 
-function artistThumbnail(data) { /*  add artist thumbnail to .artist-container */
-    let artThumbnail = 
-    `
-    <img class='artist-thumbnail' src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
-    `
-    const thumbnailContainer = document.querySelector('.artist-container') 
-    thumbnailContainer.insertAdjacentHTML('beforeend', artThumbnail)
-    return artThumbnail  
-}
-
- function artistDetails(data) { /*  add artist details to .details */
+function artistDetails(data) { /*  add artist details to .details */
     let mainInfo = 
     `
     <img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
@@ -73,9 +63,19 @@ function artistThumbnail(data) { /*  add artist thumbnail to .artist-container *
     <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
     <a href='https://${data.strTwitter}' target='_blank'>Twitter</a>
     `
-    const infoContainer = document.querySelector('.details')
+    const infoContainer = document.querySelector('.details-container')
     infoContainer.insertAdjacentHTML('beforeend', mainInfo)
     return mainInfo
+}
+
+function artistThumbnail(data) { /*  add artist thumbnail to .artist-container */
+    let artThumbnail = 
+    `
+    <img src='${data.strArtistThumb}' alt='${data.strArtist}'></img>
+    `
+    const thumbnailContainer = document.querySelector('.details-container') 
+    thumbnailContainer.insertAdjacentHTML('beforeend', artThumbnail)
+    return artThumbnail  
 }
 
 function artistBio(data) { /*  add artist bio to .bio-container */
@@ -88,6 +88,7 @@ function artistBio(data) { /*  add artist bio to .bio-container */
     return bioInfo 
 }
 
+
 // COMPONENT 5: RESET DOM / REMOVE LAST
 function removeBgImg() {  
     const rmArt = document.querySelector('.main-container')
@@ -95,16 +96,16 @@ function removeBgImg() {
         rmArt.removeChild(rmArt.lastChild)
     }
 }
-function removeThumbnail() { 
-    const rmThumbnail = document.querySelector('.artist-container')
-    while (rmThumbnail.lastChild) {
-        rmThumbnail.removeChild(rmThumbnail.lastChild)
-    }
-}
 function removeDetails() { 
-    const rmDetails = document.querySelector('.details')
+    const rmDetails = document.querySelector('.details-container')
     while (rmDetails.lastChild) {
         rmDetails.removeChild(rmDetails.lastChild)
+    }
+}
+function removeThumbnail() { 
+    const rmThumbnail = document.querySelector('.details-container')
+    while (rmThumbnail.lastChild) {
+        rmThumbnail.removeChild(rmThumbnail.lastChild)
     }
 }
 function removeBio() { 
