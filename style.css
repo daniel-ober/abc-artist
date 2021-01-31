@@ -26,6 +26,19 @@
     height: 50px;
 }
 
+#blank {
+    width: 350px;
+    height: 30px;
+    background-color: rgb(203, 236, 238);
+}
+
+#search {
+    width: 100px;
+    height: 36px;
+    background-color: rgb(206, 211, 206);
+    justify-content: center;
+}
+
 nav {
     text-align: right;
     display: flex;

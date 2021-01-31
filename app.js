@@ -60,6 +60,7 @@ function searchBio(data) { /*  add artist bio to .bio-container */
     let bioInfo =
     `
     <img src='${data.strArtistLogo}' alt='artist-logo' id='artist-logo'></img>
+    <h2 class='artist-genre'>${data.strGenre}</h2>
     <p>${data.strBiographyEN}</p>
     `
     const bioContainer = document.querySelector('.column')
