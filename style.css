@@ -45,3 +45,16 @@ nav {
     flex-direction: row;
     flex: 1;
 }
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
