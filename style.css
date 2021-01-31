@@ -1,5 +1,5 @@
-{
-    font-family: 'Shadows Into Light', cursive;
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -20,19 +20,23 @@
     height: 15%;
     display: flex;
     align-items: center;
+    /* float: right; */
+    /* display: block; */
 }
 
 .abc-logo {
     height: 50px;
 }
 
-#blank {
+.blank {
     width: 350px;
     height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: rgb(203, 236, 238);
 }
 
-#search {
+.submit {
     width: 100px;
     height: 36px;
     background-color: rgb(206, 211, 206);
@@ -58,3 +62,50 @@ nav ul li a {
     font-size: 16px;
 }
 
+.artist-thumbnail {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.artist-logo {
+    width: 50%;
+}
+
+.artist-fanart {
+    width: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(235, 215, 215);
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+/* .column ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+} */
+
+@media only screen and (max-width: 812px){
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(62, 114, 170);
+        background-position: center;
+        background-size: cover;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
