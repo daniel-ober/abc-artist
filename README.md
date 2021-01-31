@@ -100,12 +100,12 @@
 | Use Axios to fetch artist data | H | 3 hrs| 2 hrs | 0 hrs |
 | Search by user input | H | 3 hrs| 3 hrs | 0 hrs |
 | Form event listener | H | 3 hrs| 2 hrs | 0 hrs |
-| CSS Layout | H | 3 hrs| 3.25 hrs | 0 hrs |
+| CSS Layout | H | 3 hrs| 4.5 hrs | 0 hrs |
 | Reset DOM if another search is performed | H | 3 hrs| 5 hrs | 0 hrs |
 | Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 3.5 hrs | 0 hrs |
-| Set flexbox containers/items | M | 2 hrs| 0.5 hrs | 0 hrs |
-| Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 0.5 hrs | 0 hrs |
+| Set flexbox containers/items | M | 2 hrs| 1 hrs | 0 hrs |
+| Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 0.75 hrs | 0 hrs |
 | Deploy app to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
-| Testing | H | 2 hrs| 0.75 hrs | 0 hrs |
+| Testing | H | 2 hrs| 1 hrs | 0 hrs |
 | Debugging | H | 2 hrs| 1.5 hrs | 0 hrs |
-| Total | H | 26 hrs| 22.25 hrs | 0 hrs |
+| Total | H | 26 hrs| 24.5 hrs | 0 hrs |

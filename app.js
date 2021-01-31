@@ -43,7 +43,7 @@ function searchMain(data) { /*  add artist bg image to .main-container */
     <img src='${data.strArtistFanart}' id='background-art'></img>
     <div class='artist-container'>
         <img src='${data.strArtistThumb}' alt='${data.strArtist}' id='artist-thumbnail'></img>
-        <img src='${data.strArtistLogo}' alt='artist-logo' id='artist-logo'></img>
+        
         <div class='social-media'>
             <a href='https://${data.strWebsite}' target='_blank'>Website</a>
             <a href='https://${data.strFacebook}' target='_blank'>Facebook</a>
@@ -59,9 +59,10 @@ function searchMain(data) { /*  add artist bg image to .main-container */
 function searchBio(data) { /*  add artist bio to .bio-container */
     let bioInfo =
     `
+    <img src='${data.strArtistLogo}' alt='artist-logo' id='artist-logo'></img>
     <p>${data.strBiographyEN}</p>
     `
-    const bioContainer = document.querySelector('.bio-container')
+    const bioContainer = document.querySelector('.column')
     bioContainer.insertAdjacentHTML('beforeend', bioInfo)
     return bioInfo 
 }
@@ -76,7 +77,7 @@ function removeMain() {
 }
 
 function removeBio() { 
-    const rmBio = document.querySelector('.bio-container')
+    const rmBio = document.querySelector('.column')
     while (rmBio.lastChild) {
         rmBio.removeChild(rmBio.lastChild)
     }
