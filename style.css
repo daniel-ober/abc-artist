@@ -8,12 +8,12 @@
 .container {
     background-image: url(/abc-wallpaper.png);
     filter: grayscale(10%);
+    background-repeat: repeat-x;
     width: 100%;
     height: 100vh;
     background-color: rgb(22, 126, 145);
     background-position: center;
     background-size: cover;
-    background-repeat: repeat-y;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
@@ -58,6 +58,7 @@
 }
 
 nav {
+    
     text-align: center;
     display: inline-flex;
     justify-content: flex-start;
@@ -89,7 +90,7 @@ nav ul li a {
 }
 
 .bio-details {
-    padding-top: 25%;
+    padding-top: 7%;
     padding-bottom: 40px;
     padding-left: 2%;
     padding-right: 2%;
@@ -117,10 +118,13 @@ display: none;
 .artist-logo {
     width: 50%;
     height: auto;
+    display: flex;
+    padding-top: 20vh;
+    flex-direction: column;
 }
 
-.social-tag {
-    image-resolution: 5%;
+.social-media {
+    margin-left: 2vh;
 }
 
 .about {
@@ -132,16 +136,16 @@ display: none;
 }
 
 h1 {
-    color: rgb(251, 255, 207);
-    font-size: 30px;
+    color: rgb(4, 27, 75);
+    font-size: 29px;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(12, 30, 109);
     font-size: 20px;
 }
 
-.about-desc {
+.about-description {
     display: none;
 }
 
@@ -183,33 +187,24 @@ h2 {
     height: 100%;
 }
 
-.bio-details {
-    padding-top: 5%;
-    padding-bottom: 40px;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: rgb(199, 237, 252);
-}
-
 .slogan {
     display: none;
 }
 
-.about-desc {
+.artist-fanart {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.about-description {
     display: contents;
 }
 
-.about {
-    font-size: 23px;
-    display: flex;
-    flex-direction: row;
-    font-weight: bolder;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
 .artist-logo {
-    padding-top: 2vh;
+    margin: auto;
+    padding-top: 20vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -217,12 +212,16 @@ h2 {
 }
 
 .social-media {
-    display: inline-block; 
-    flex-direction: row;
+    display: block;
+    margin-left: 10vh;
+    margin-right: auto;
 }
 
-.artist-fanart {
-    display: none;
+.bio-details {
+    padding-bottom: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(199, 237, 252);
 }
 
 }

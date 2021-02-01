@@ -14,7 +14,7 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     let data = response.data.artists[0] /* declare a variable to grab artist data*/
         // console.log(data)
         removeWallpaper()
-        removeDetails()
+        removeDetails() /* removes  */
         removeBio()
         artistWallpaper(data)
         artistDetails(data)
@@ -24,7 +24,7 @@ async function getData(uniqueArtist) {  /*  create an async function that points
     }
 }
 
-// 3) SETUP FUNCTIONALITY FOR UNIQUE SEARCH FROM THE BROWSER
+// 3) SETUP FUNCTIONALITY FOR ARTIST SEARCH
 let searchButton = document.querySelector('.submit') /*  declare a var that pulls search button via querySelector  */
 // console.log(searchButton)
 
@@ -39,7 +39,7 @@ const artistValue = document.querySelector('.blank').value /*  declare a variabl
 
 
 // COMPONENT 4: APPEND DATA TO DOM
-// A) set artist artist image (wallpaper) to main artist-section container
+// A) Set artist artist fanart image to main artist-section container, as wallpaper
 function artistWallpaper(data) {
     let wallpaper =
     `
@@ -51,32 +51,31 @@ function artistWallpaper(data) {
     return artistWallpaper 
 }
 
-// B) set artist details to artist-details section of main artist-section
+// B) Set artist details to artist-details section of main artist-section
 function artistDetails(data) {
     let details =
     `
-    <a href='https://${data.strWebsite}' class='social-media' target='_blank'><img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img></a><br>
-    <a href='https://${data.strFacebook}' class='social-media' target='_blank'><img class='social-tag' src='./facebook-icon.png'id='facebook-icon'></img src></a>
-    <a href='https://${data.strTwitter}' class='social-media' target='_blank'><img class='social-tag' src='./twitter-icon.png' id='twitter-icon'></img src></a>
-    <h1 class='artist-name'>Artist: ${data.strArtist}</h1>
-    <h2 class='artist-genre'>Genre: ${data.strGenre}</h2><br>
+    <a href='https://${data.strWebsite}' target='_blank'><img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img></a><br>
+    <a href='https://${data.strFacebook}' target='_blank'><img class='social-tag' src='./facebook-icon.png'id='facebook-icon'></img src></a>
+    <a href='https://${data.strTwitter}' target='_blank'><img class='social-tag' src='./twitter-icon.png' id='twitter-icon'></img src></a>
     `
     const detailsContainer = document.querySelector('.artist-details')
     detailsContainer.insertAdjacentHTML('beforeend', details)
     return artistDetails 
 }
 
-// C) set artist bio to to artist-bio section of main artist-section
+// C) Set artist bio to to artist-bio section of main artist-section
 function artistBio(data) {
     let bio =
     `
+    <h1 class='artist-name'>Artist: ${data.strArtist}</h1>
+    <h2 class='artist-genre'>Genre: ${data.strGenre}</h2><br>
     <p class='bio-details'>${data.strBiographyEN}</p>
     `
     const bioContainer = document.querySelector('.artist-bio')
     bioContainer.insertAdjacentHTML('beforeend', bio)
     return artistBio 
 }
-
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
 function removeWallpaper() { 
