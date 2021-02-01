@@ -92,6 +92,42 @@
 ## Priority Matrix
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
 
+## Code Snippet I'm Proud Of
+- I'm proud of this snippet of HTML, as I previously had an additional 33 lines of js code. After setting my js functionality, I moved to my CSS styling sheet and saw some major hurdles in the original vision of my project. Going back, restructuring my HTML index sheet, and then going back and making some refinements to my js sheet made the world of a differenct. Though it took me a few extra hours to get it right, it was an incredible learning experience for going forward. 
+
+What I learned is to better approach how I'm going to structure each element and section in my project, prior to js and styling. It helped physically mapping out on paper what my structure was.
+
+```javascript
+<div class='container' id='home'>
+    <div class='header'>
+        <img class='abc-logo' src='./artistabc-logo.png'>
+        <nav>
+        </nav>
+        <input type='text' class='blank' onfocus="this.value=''" placeholder='Artist Name'>
+        <button class='submit'>Search</button>
+    </div>
+    <div class='background-image'>
+        <div class='artist-section'>
+        <div class='slogan'>
+            <h1>SEARCH</h1>
+            <h1>DISCOVER</h1>
+        </div>
+    </div>
+    <div class='details-container'>
+        <div class='artist-details'>
+        </div>
+        <div class='social-media'>
+        </div>
+        <div class='artist-bio'>
+        </div>
+    </div>
+</div>
+```
+
+
+## Issues Log
+
+
 
 ## Timeframes
 

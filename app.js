@@ -10,36 +10,29 @@ const url = `${domain}${api}`
 async function getData(uniqueArtist) {  /*  create an async function that points to music artist data */  /* set my function parameter to 'uniqueArtist' once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
     try {  /*  setup try/catch for the data retrieval */
     let response = await axios.get(`${url}${uniqueArtist}`) /* declare variable that will call on the data from our API url above */ /* added 'uniqueArtist' as the url endpoint once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
-        // console.log(response) 
     let data = response.data.artists[0] /* declare a variable to grab artist data*/
-        // console.log(data)
         removeWallpaper()
-        removeDetails() /* removes  */
+        removeDetails()
         removeBio()
         artistWallpaper(data)
         artistDetails(data)
         artistBio(data)
-    } catch (error) { /*  catch setup as a fallback */
+    } catch (error) {
         console.log('Oh, no! There seems to be an issue. Please try  again later.')
     }
 }
 
 // 3) SETUP FUNCTIONALITY FOR ARTIST SEARCH
-let searchButton = document.querySelector('.submit') /*  declare a var that pulls search button via querySelector  */
-// console.log(searchButton)
-
-searchButton.addEventListener('click', (e) => { /*  set event listener to wait until click  */
+let searchButton = document.querySelector('.submit')
+searchButton.addEventListener('click', (e) => {
     e.preventDefault()
-    // console.log(searchButton)
 
-const artistValue = document.querySelector('.blank').value /*  declare a variable that puts user's value input into the 'blank' id of header  */
+const artistValue = document.querySelector('.blank').value
     getData(artistValue)
 })
-// getData()
 
 
 // COMPONENT 4: APPEND DATA TO DOM
-// A) Set artist artist fanart image to main artist-section container, as wallpaper
 function artistWallpaper(data) {
     let wallpaper =
     `
@@ -51,7 +44,6 @@ function artistWallpaper(data) {
     return artistWallpaper 
 }
 
-// B) Set artist details to artist-details section of main artist-section
 function artistDetails(data) {
     let details =
     `
@@ -64,7 +56,6 @@ function artistDetails(data) {
     return artistDetails 
 }
 
-// C) Set artist bio to to artist-bio section of main artist-section
 function artistBio(data) {
     let bio =
     `
@@ -76,6 +67,7 @@ function artistBio(data) {
     bioContainer.insertAdjacentHTML('beforeend', bio)
     return artistBio 
 }
+
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
 function removeWallpaper() { 
