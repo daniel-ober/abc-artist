@@ -137,12 +137,12 @@ display: none;
 
 h1 {
     color: rgb(4, 27, 75);
-    font-size: 29px;
+    font-size: 35px;
 }
 
 h2 {
-    color: rgb(12, 30, 109);
-    font-size: 20px;
+    color: rgb(220, 220, 220);
+    font-size: 25px;
 }
 
 .about-description {
