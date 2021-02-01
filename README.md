@@ -2,7 +2,12 @@
 
 ## Project Name
 
-- ABC Artist
+- Artist ABC
+
+
+## Deployed Site
+
+- https://artist-abc.netlify.app/
 
 
 ## Project Description
