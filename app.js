@@ -1,16 +1,15 @@
 // 1) DECLARE VARIABLES FOR API URL INFO
-// https://www.theaudiodb.com/api/v1/json/1/search.php?s=
-// no api key needed
+// Note: No API Key needed
 const domain = 'https://www.theaudiodb.com'
 const api = `/api/v1/json/1/search.php?s=`
 const url = `${domain}${api}`
 
 
 // 2) ACCESS API DATA USING ASYNC FUNCTION
-async function getData(uniqueArtist) {  /*  create an async function that points to music artist data */  /* set my function parameter to 'uniqueArtist' once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
-    try {  /*  setup try/catch for the data retrieval */
-    let response = await axios.get(`${url}${uniqueArtist}`) /* declare variable that will call on the data from our API url above */ /* added 'uniqueArtist' as the url endpoint once I got to STEP 3, "declare a variable that puts user's value input into the 'blank' id of header" */
-    let data = response.data.artists[0] /* declare a variable to grab artist data*/
+async function getData(uniqueArtist) { 
+    try {
+    let response = await axios.get(`${url}${uniqueArtist}`) 
+    let data = response.data.artists[0] 
         removeWallpaper()
         removeDetails()
         removeBio()

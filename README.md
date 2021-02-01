@@ -93,9 +93,7 @@
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
 
 ## Code Snippet I'm Proud Of
-- I'm proud of this snippet of HTML, as I previously had an additional 33 lines of js code. After setting my js functionality, I moved to my CSS styling sheet and saw some major hurdles in the original vision of my project. Going back, restructuring my HTML index sheet, and then going back and making some refinements to my js sheet made the world of a differenct. Though it took me a few extra hours to get it right, it was an incredible learning experience for going forward. 
-
-What I learned is to better approach how I'm going to structure each element and section in my project, prior to js and styling. It helped physically mapping out on paper what my structure was.
+- I'm proud of this snippet of HTML, helping me strip 33 lines of unnecessary code. 
 
 ```javascript
 <div class='container' id='home'>
@@ -126,22 +124,24 @@ What I learned is to better approach how I'm going to structure each element and
 
 
 ## Issues Log
+- After setting my js functionality, I moved to my CSS styling sheet and saw some major hurdles in the original vision of my project. Going back, restructuring my HTML index sheet, and then going back and making some refinements to my js sheet made the world of a differenct. Though it took me a few extra hours to get it right, it was an incredible learning experience for going forward.
 
+What I learned is to better approach how I'm going to structure each element and section in my project, prior to js and styling. It helped physically mapping out on paper what my structure was.
 
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Use Axios to fetch artist data | H | 3 hrs| 2 hrs | 0 hrs |
-| Search by user input | H | 3 hrs| 3 hrs | 0 hrs |
-| Form event listener | H | 3 hrs| 2 hrs | 0 hrs |
-| CSS Layout | H | 3 hrs| 4.5 hrs | 0 hrs |
-| Reset DOM if another search is performed | H | 3 hrs| 5 hrs | 0 hrs |
-| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 3.5 hrs | 0 hrs |
-| Set flexbox containers/items | M | 2 hrs| 1 hrs | 0 hrs |
-| Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 0.75 hrs | 0 hrs |
-| Deploy app to a hosting site | M | 1 hrs| 0 hrs | 0 hrs |
-| Testing | H | 2 hrs| 1 hrs | 0 hrs |
-| Debugging | H | 2 hrs| 1.5 hrs | 0 hrs |
-| Total | H | 26 hrs| 24.5 hrs | 0 hrs |
+| Use Axios to fetch artist data | H | 3 hrs| 2 hrs | 2 hrs |
+| Search by user input | H | 3 hrs| 3 hrs | 3 hrs |
+| Form event listener | H | 3 hrs| 2 hrs | 2 hrs |
+| CSS Layout | H | 3 hrs| 7 hrs | 7 hrs |
+| Reset DOM if another search is performed | H | 3 hrs| 5 hrs | 5 hrs |
+| Core Application Structure (HTML, CSS, etc.) | H | 2 hrs| 6 hrs | 6 hrs |
+| Set flexbox containers/items | M | 2 hrs| 2 hrs | 2 hrs |
+| Add Media query for responsive design when user switch from desktop to mobile view | M | 2 hrs| 3.5 hrs | 3.5 hrs |
+| Deploy app to a hosting site | M | 1 hrs| 1 hrs | 1 hrs |
+| Testing | H | 2 hrs| 2 hrs | 2 hrs |
+| Debugging | H | 2 hrs| 1.5 hrs | 1.5 hrs |
+| Total | H | 26 hrs| 34 hrs | 35 hrs |
