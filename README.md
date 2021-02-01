@@ -89,10 +89,10 @@
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Jan 26| Project Approval, test API data in Chrome Dev, Pseudocoding | Complete
-|Jan 27| Pseudocoding, Core HTML Structure, Base CSS Styling | In Complete
-|Jan 28| MVP  | In Complete
-|Jan 29| Styling | In Complete
-|Feb 1| Presentations/Project Submission | In Progress
+|Jan 27| Pseudocoding, Core HTML Structure, Base CSS Styling | Complete
+|Jan 28| MVP  | Complete
+|Jan 29| Styling | Complete
+|Feb 1| Presentations/Project Submission | Complete
 
 ## Priority Matrix
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
