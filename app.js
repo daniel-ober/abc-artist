@@ -38,7 +38,9 @@ const artistValue = document.querySelector('.blank').value /*  declare a variabl
 // getData() /* un-commented getData()  once I was able to get the unique artist data in Chrome dev tool. */
 
 
-// COMPONENT 4: APPEND ARTIST DATA TO DOM
+// COMPONENT 4: APPEND DATA TO DOM
+
+// A) set artist artist image (wallpaper) to meain artist-section container
 function artistWallpaper(data) {
     let wallpaper =
     `
@@ -50,20 +52,22 @@ function artistWallpaper(data) {
     return artistWallpaper 
 }
 
+// B) set artist details to artist-details section of main artist-section
 function artistDetails(data) {
     let details =
     `
     <img class='artist-thumbnail' src='${data.strArtistThumb}' alt='thumbnail'></img>
     <img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
-    <a class='social-media' href='https://${data.strWebsite}' target='_blank'>Website</a>
-    <a class='social-media' href='https://${data.strFacebook}' target='_blank'>Facebook</a>
-    <a class='social-media' href='https://${data.strTwitter}' target='_blank'>Twitter</a>
+    <a href='https://${data.strWebsite}' class='social-media' target='_blank'>Website</a>
+    <a href='https://${data.strFacebook}' class='social-media' target='_blank'><img src='./facebook-icon.png'></img src></a>
+    <a href='https://${data.strTwitter}' class='social-media' target='_blank'><img src='./twitter-icon.png'></img src></a>
     `
     const detailsContainer = document.querySelector('.artist-details')
     detailsContainer.insertAdjacentHTML('beforeend', details)
     return artistDetails 
 }
 
+// C) set artist bio to to artist-bio section of main artist-section
 function artistBio(data) {
     let bio =
     `
@@ -76,6 +80,7 @@ function artistBio(data) {
     bioContainer.insertAdjacentHTML('beforeend', bio)
     return artistBio 
 }
+
 
 // COMPONENT 5: RESET DOM / REMOVE LAST
 function removeWallpaper() { 
