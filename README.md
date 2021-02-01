@@ -93,7 +93,7 @@
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
 
 ## Code Snippet I'm Proud Of
-- I'm proud of this snippet of HTML, helping me strip 33 lines of unnecessary code. 
+- I'm proud of this snippet of HTML, resulting in 33 stripped lines of unnecessary js code. 
 
 ```javascript
 <div class='container' id='home'>
@@ -126,7 +126,7 @@
 ## Issues Log
 - After setting my js functionality, I moved to my CSS styling sheet and saw some major hurdles in the original vision of my project. Going back, restructuring my HTML index sheet, and then going back and making some refinements to my js sheet made the world of a differenct. Though it took me a few extra hours to get it right, it was an incredible learning experience for going forward.
 
-What I learned is to better approach how I'm going to structure each element and section in my project, prior to js and styling. It helped physically mapping out on paper what my structure was.
+- What I learned is to better approach how I'm going to structure each element and section in my project, prior to js and styling. It helped physically mapping out on paper what my structure was.
 
 
 ## Timeframes
