@@ -144,4 +144,4 @@
 | Deploy app to a hosting site | M | 1 hrs| 1 hrs | 1 hrs |
 | Testing | H | 2 hrs| 2 hrs | 2 hrs |
 | Debugging | H | 2 hrs| 1.5 hrs | 1.5 hrs |
-| Total | H | 26 hrs| 34 hrs | 35 hrs |
+| Total | H | 26 hrs| 35 hrs | 35 hrs |
