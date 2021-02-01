@@ -92,7 +92,7 @@
 |Jan 27| Pseudocoding, Core HTML Structure, Base CSS Styling | Complete
 |Jan 28| MVP  | Complete
 |Jan 29| Styling | Complete
-|Feb 1| Presentations/Project Submission | Complete
+|Feb 1| Presentations/Project Submission | In Progress
 
 ## Priority Matrix
 ![alt text](https://github.com/daniel-ober/lalalyric/blob/main/Developmental%20Matrix.png)
