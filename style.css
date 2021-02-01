@@ -1,35 +1,50 @@
 *{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    background-image: url(/abc-wallpaper.png);
+    filter: grayscale(10%);
     width: 100%;
     height: 100vh;
     background-color: rgb(22, 126, 145);
     background-position: center;
     background-size: cover;
+    background-repeat: repeat-y;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
-}    
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-evenly;
+    padding-top: 25vh;
+    padding-left: 28vh;
+    padding-right: 25vh;
+}
 
 .header {
     padding-top: 1%;
-    height: 15%;
+    height: 10%;
     display: flex;
     align-items: center;
     float: center; 
 }
 
 .abc-logo {
-    height: 50px;
+    height: 70px;
 }
 
 .blank {
     width: 350px;
     height: 35px;
+    padding-left: 10px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: rgb(203, 236, 238);
@@ -37,33 +52,53 @@
 
 .submit {
     width: 100px;
-    height: 41px;
+    height: 39px;
     background-color: rgb(206, 211, 210);
     justify-content: center;
 }
 
 nav {
     text-align: center;
-    display: flex;
+    display: inline-flex;
+    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
 }
 
 nav ul li {
     list-style: none;
-    display: inline-block;
-    margin-left: 50px;
+    display: inline-block;   
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 26px;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.artist-bio {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(199, 237, 252);
+}
+
+.bio-details {
+    padding-top: 25%;
+    padding-bottom: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(199, 237, 252);
 }
 
 .artist-fanart {
     width: 100%;
-    opacity: 10%;
+    height: auto;
 }
 
 .artist-section {
@@ -73,46 +108,43 @@ nav ul li a {
 .artist-details {
     padding-left: 3%;
     padding-right: 3%;
-    
 }
 
 .artist-thumbnail {
-    width: 275px;
-    height: 275px;
-    border-radius: 50%;
-    border-color: rgba(113, 174, 228, 0.193);
-    border-style: double;
-    border-width: 15px;
+display: none;
 }
 
 .artist-logo {
     width: 50%;
+    height: auto;
 }
 
-.artist-bio {
-    padding-left: 5%;
-    padding-right: 5%;
+.social-tag {
+    image-resolution: 5%;
+}
+
+.about {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    text-align: center;
 }
 
 h1 {
-    color: white;
-    font-size: 50px;
-}
-
-h2 {
-    color: rgb(235, 215, 215);
+    color: rgb(251, 255, 207);
     font-size: 30px;
 }
 
-p {
-    color: white;
-    font-size: 18px;
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
-.column ul li {
-    list-style: none;
-    display: inline-block;
+.about-desc {
+    display: none;
 }
+
 
 @media only screen and (max-width: 812px){
 .container {   
@@ -128,47 +160,69 @@ p {
 
 .header,
 .ul li a {
-    height 230px;
+    height: 230px;
     flex-direction: column;
     text-align: center;
     float: center;
 }
 
+.abc-logo {
+    padding-top: 7vh;
+}
+
 .blank {
-    width: 85%;
+    width: 92%;
+    height: 100%;
+    margin: 1%;
     background-color: rgb(203, 236, 238);
 }
 
 .submit {
-    width: 50%;
-    height: 75%;
+    margin: 1%;
+    width: 95%;
+    height: 100%;
+}
+
+.bio-details {
+    padding-top: 5%;
+    padding-bottom: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(199, 237, 252);
+}
+
+.slogan {
+    display: none;
+}
+
+.about-desc {
+    display: contents;
+}
+
+.about {
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .artist-logo {
+    padding-top: 2vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.artist-fanart {
-    opacity: 0%;
-}
-
-.artist-thumbnail {
-    align-content: ;
-    display: flex; 
+.social-media {
+    display: inline-block; 
     flex-direction: row;
-    justify-content: center;
-    border-radius: 27%;
 }
 
-.artist-bio {
-    padding-left: 5%;
-    padding-right: 5%;
+.artist-fanart {
+    display: none;
 }
-
-
-
 
 }

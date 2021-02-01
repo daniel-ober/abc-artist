@@ -19,28 +19,27 @@ async function getData(uniqueArtist) {  /*  create an async function that points
         artistWallpaper(data)
         artistDetails(data)
         artistBio(data)
-    } catch (error) { /*  catch setup as a fallback to in case of an error in our response var */
-        console.log(error)
+    } catch (error) { /*  catch setup as a fallback */
+        console.log('Oh, no! There seems to be an issue. Please try  again later.')
     }
 }
 
 // 3) SETUP FUNCTIONALITY FOR UNIQUE SEARCH FROM THE BROWSER
-let searchButton = document.querySelector('.submit') /*  declare a var that pulls our search button via querySelector  */
+let searchButton = document.querySelector('.submit') /*  declare a var that pulls search button via querySelector  */
 // console.log(searchButton)
 
-searchButton.addEventListener('click', (e) => { /*  set event listener to prevent data from showing until click  */
+searchButton.addEventListener('click', (e) => { /*  set event listener to wait until click  */
     e.preventDefault()
     // console.log(searchButton)
 
 const artistValue = document.querySelector('.blank').value /*  declare a variable that puts user's value input into the 'blank' id of header  */
     getData(artistValue)
 })
-// getData() /* un-commented getData()  once I was able to get the unique artist data in Chrome dev tool. */
+// getData()
 
 
 // COMPONENT 4: APPEND DATA TO DOM
-
-// A) set artist artist image (wallpaper) to meain artist-section container
+// A) set artist artist image (wallpaper) to main artist-section container
 function artistWallpaper(data) {
     let wallpaper =
     `
@@ -56,11 +55,11 @@ function artistWallpaper(data) {
 function artistDetails(data) {
     let details =
     `
-    <img class='artist-thumbnail' src='${data.strArtistThumb}' alt='thumbnail'></img>
-    <img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img>
-    <a href='https://${data.strWebsite}' class='social-media' target='_blank'>Website</a>
-    <a href='https://${data.strFacebook}' class='social-media' target='_blank'><img src='./facebook-icon.png'></img src></a>
-    <a href='https://${data.strTwitter}' class='social-media' target='_blank'><img src='./twitter-icon.png'></img src></a>
+    <a href='https://${data.strWebsite}' class='social-media' target='_blank'><img class='artist-logo' src='${data.strArtistLogo}' alt='logo'></img></a><br>
+    <a href='https://${data.strFacebook}' class='social-media' target='_blank'><img class='social-tag' src='./facebook-icon.png'id='facebook-icon'></img src></a>
+    <a href='https://${data.strTwitter}' class='social-media' target='_blank'><img class='social-tag' src='./twitter-icon.png' id='twitter-icon'></img src></a>
+    <h1 class='artist-name'>Artist: ${data.strArtist}</h1>
+    <h2 class='artist-genre'>Genre: ${data.strGenre}</h2><br>
     `
     const detailsContainer = document.querySelector('.artist-details')
     detailsContainer.insertAdjacentHTML('beforeend', details)
@@ -71,11 +70,8 @@ function artistDetails(data) {
 function artistBio(data) {
     let bio =
     `
-    <h1='artist-name'>Artist: ${data.strArtist}</h1>
-    <h2='artist-genre'>Genre: ${data.strGenre}</h2>
-    <p>${data.strBiographyEN}</p>
+    <p class='bio-details'>${data.strBiographyEN}</p>
     `
-
     const bioContainer = document.querySelector('.artist-bio')
     bioContainer.insertAdjacentHTML('beforeend', bio)
     return artistBio 

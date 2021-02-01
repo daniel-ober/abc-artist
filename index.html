@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="./app.js"></script>
     <title>Artist ABC</title>
 </head>
 
 <body>
-<div class='container'>
+<div class='container' id='home'>
     <div class='header'>
         <img class='abc-logo' src='./artistabc-logo.png'>
         <nav>
-            <ul>
-                <li><a href='#about'>ABOUT</a></li>
-            </ul>
+            <!-- <ul>
+                <li class='nav-button'><a href='#home'>HOME</a></li>
+                <li class='nav-button'><a href='#about'>ABOUT</a></li>
+            </ul> -->
         </nav>
         <input type='text' class='blank' onfocus="this.value=''" placeholder='Artist Name'>
         <button class='submit'>Search</button>
     </div>
-    
     <div class='background-image'>
-        <div class='artist-section'></div>
+        <div class='artist-section'>
+        <div class='slogan'>
+            <h1>SEARCH</h1>
+            <h1>DISCOVER</h1>
+        </div>
     </div>
     <div class='details-container'>
-        <div class='artist-details'></div>
-        <div class='artist-bio'></div>
+        <div class='artist-details'>
+        </div>
         <div class='social-media'>
-
+        </div>
+        <div class='artist-bio'>
         </div>
     </div>
 </div>
 
-<div class='row'>
-    <div class='column'>
-        </div>
-    </div>
+<div id='#about'>
+    <p class='about-desc'>Your go-to source for learning about your favorite music artists!</p>
+</p>
 </div>
-    <footer></footer>
+</div>
 </body>
 </html>
